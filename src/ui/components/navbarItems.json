@@ -1,0 +1,50 @@
+{ "navbarItems":[
+    {
+        "name": "Inicio",
+        "bxClassname": "bx bx-home-circle",
+        "bxsClassname": "bx bxs-home-circle",
+        "to": "home"
+    },
+    {
+        "name": "Explorar",
+        "bxClassname": "bx bx-hash",
+        "bxsClassname": "bx bx-hash",
+        "to": "explore"
+     },
+    {
+        "name": "Notificaciones",
+        "bxClassname": "bx bx-bell",
+        "bxsClassname": "bx bxs-bell",
+        "to": "notifications"
+     },
+    {
+        "name": "Mensajes",
+        "bxClassname": "bx bx-envelope",
+        "bxsClassname": "bx bxs-envelope",
+        "to": "messages"
+     },
+    {
+        "name": "Guardados",
+        "bxClassname": "bx bx-bookmark",
+        "bxsClassname": "bx bxs-bookmark",
+        "to": "saved"
+     },
+    {
+        "name": "Listas",
+        "bxClassname": "bx bx-detail",
+        "bxsClassname": "bx bxs-detail",
+        "to": "lists"
+     },
+    {
+        "name": "Perfil",
+        "bxClassname": "bx bx-user",
+        "bxsClassname": "bx bxs-user",
+        "to": "profile"
+     },
+    {
+        "name": "Más opciones",
+        "bxClassname": "bx bx-dots-horizontal-rounded",
+        "bxsClassname": "bx bx-dots-horizontal-rounded",
+        "to": "moreoptions"
+     }
+]}
