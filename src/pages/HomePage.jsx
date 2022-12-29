@@ -64,7 +64,7 @@ export const HomePage = () => {
 
                           </div>
                           <div id="centerTwittear23TwittearDiv">
-                              <button id="centerTwittearbtn">Twittear</button>
+                              <button id="center-twittear-btn">Twittear</button>
                           </div>
                       </div>
 
