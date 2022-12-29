@@ -13,7 +13,7 @@ export const Navbar = () => {
 
     const navBar = useRef()
 
-    const [navBarWidth, setNavBarWidth] = useState(200)
+    const [navBarWidth, setNavBarWidth] = useState( 200 )
 
     useLayoutEffect(()=> {
 
@@ -39,6 +39,7 @@ export const Navbar = () => {
             <div>
                 { navbarItems.map( item => (
                     <NavLink 
+                    key = { item.name}
                     to={ item.to }
                     className={({isActive}) =>
                         isActive? 'active': 'inactive' }

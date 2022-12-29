@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom'
 import './styles/HomePage.css'
 
 export const HomePage = () => {
+
+
+
+
   return (
     <>
-      <h1>HomePage</h1>
 
       <div className="center">
               <div className="topCenter">
@@ -19,7 +22,7 @@ export const HomePage = () => {
                   </div>
                   <div className="centerTwittear2">
                       <div>
-                          <input id="tweetInput" type="text" placeholder="¿Qué está pasando?" />
+                          <input className="tweetInput" type="text" placeholder="¿Qué está pasando?" />
                       </div>
                       <div className="centerTwittear22">
                           <Link to="">
