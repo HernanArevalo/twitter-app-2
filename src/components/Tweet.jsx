@@ -15,10 +15,10 @@ export const Tweet = (tweet) => {
                     <div className="centerTweet2">
                         <div className="userTweet">
                             <div className="user1">
-                                <div className="user1-1">
+                                <div className="name">
                                     <a src=""><span>{tweet.user.name}</span></a>
                                 </div>
-                                <div className="user1-2">
+                                <div className="screen_name">
                                     <a src=""><span>@{tweet.user.screen_name}</span></a>
                                 </div>
                                 <div className="user1-3">

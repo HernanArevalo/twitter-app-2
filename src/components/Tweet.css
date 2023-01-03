@@ -5,7 +5,7 @@
     padding: 0 16px;
     padding-top: 15px;
     border-bottom: 1px solid rgb(63, 72, 78);
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     cursor: pointer;
 
 }
@@ -30,12 +30,15 @@
     flex-direction: row;
 }
 
-.user1-1 {
+.name {
     font-weight: 700;
     margin-right: 4px;
 }
+.name:hover{
+    text-decoration: underline;
+}
 
-.user1-2 span {
+.screen_name span {
     color: rgb(136, 153, 166);
     margin-right: 4px;
 }

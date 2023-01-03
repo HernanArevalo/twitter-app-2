@@ -4,10 +4,6 @@ require('dotenv').config
 //console.log(process.env);
 
 const T = new Twit({
-  consumer_key:         'tinHetOF3sa64zVqCUsNmXXJY',
-  consumer_secret:      '1TBz0k7Lzwyt3lwjGplBqGKfE8fxxS94MM5Y3MJC7oar64eRAp',
-  access_token:         '180469512-oYp3DRcPRwjoknrJL1LDZBASJxDC4xiI5Xi1uH4h',
-  access_token_secret:  'JrMs3UtQVSv4GMH6UyIyPkcODqtwHEBOhCDnRV5TOahPZ',
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
   strictSSL:            true,     // optional - requires SSL certificates to be valid.
 })
