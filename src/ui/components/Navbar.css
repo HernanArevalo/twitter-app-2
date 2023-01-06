@@ -5,9 +5,7 @@
     background: transparent;
     display: flex;
     flex-direction: column;
-    position: sticky;
-    top: 0;
-    height: 100%;
+
 }
 
 .twLogoNav {
@@ -102,8 +100,7 @@
     height: 100vh;
 }
 .navbar-items{
-    position: absolute;
-    right: 0px;
+
     text-decoration: none;
 }
 

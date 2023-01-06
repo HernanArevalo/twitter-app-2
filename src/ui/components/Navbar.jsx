@@ -39,7 +39,7 @@ export const Navbar = () => {
             <div>
                 { navbarItems.map( item => (
                     <NavLink 
-                    key = { item.name}
+                    key = { item.name }
                     to={ item.to }
                     className={({isActive}) =>
                         isActive? 'active': 'inactive' }
@@ -47,12 +47,10 @@ export const Navbar = () => {
                     <div className="inicioNav leftItem">
                         <div>
                             {
-                                
-                                <i className={pathname.includes(item.to) ? item.bxsClassname : item.bxClassname }></i>
-
+                            <i className={pathname.includes(item.to) ? item.bxsClassname : item.bxClassname }></i>
                             }
 
-                                <span className="leftItemText">{item.name}</span>
+                            <span className="leftItemText">{item.name}</span>
 
                         </div>
                     </div>
