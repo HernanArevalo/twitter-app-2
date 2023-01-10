@@ -47,4 +47,31 @@
         "bxsClassname": "bx bx-dots-horizontal-rounded",
         "to": "moreoptions"
      }
-]}
+    ],
+    "navBarItemsMobile":[
+        {
+            "name": "Inicio",
+            "bxClassname": "bx bx-home-circle",
+            "bxsClassname": "bx bxs-home-circle",
+            "to": "home"
+        },
+        {
+            "name": "Search",
+            "bxClassname": "bx bx-search",
+            "bxsClassname": "bx bxs-search",
+            "to": "search"
+        },
+        {
+            "name": "Notificaciones",
+            "bxClassname": "bx bx-bell",
+            "bxsClassname": "bx bxs-bell",
+            "to": "notifications"
+         },
+         {
+            "name": "Mensajes",
+            "bxClassname": "bx bx-envelope",
+            "bxsClassname": "bx bxs-envelope",
+            "to": "messages"
+         }
+    ]
+}

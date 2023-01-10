@@ -70,8 +70,8 @@ export const HomePage = () => {
             </div>
             <div id="centerTweets">
                 
-                {   tweets.map( tweet => (
-                    <Tweet key={ tweet.id } {...tweet }/>
+                {   tweets.map( (tweet, idx) => (
+                    <Tweet key={ idx } {...tweet }/>
                 ))
 
                 }

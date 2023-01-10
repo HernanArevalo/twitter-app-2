@@ -1,7 +1,7 @@
 
 import { useLayoutEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { navbarItems } from './navbarItems.json'
+import { navbarItems, navBarItemsMobile } from './navbarItems.json'
 import './Navbar.css'
 
 
@@ -13,21 +13,12 @@ export const Navbar = () => {
 
     const navBar = useRef()
 
-    const [navBarWidth, setNavBarWidth] = useState( 200 )
-
-    useLayoutEffect(()=> {
-
-        const navBarWidth =  navBar.current.getBoundingClientRect().width 
-
-        setNavBarWidth(navBarWidth)
-
-
-    } )
-
 
   return (
-    <>
-    <nav className="navbar-container" ref={ navBar }>
+    <>{
+        window.innerWidth > 500 ?
+    
+        <nav className="navbar-container" ref={ navBar }>
 
         <div className='navbar-items'>
             <Link to="/home">
@@ -65,7 +56,26 @@ export const Navbar = () => {
 
 
     </nav>
+    :
+    <nav className="navbar-mobile" ref={ navBar }>
+        { navBarItemsMobile.map( item => (
+            <NavLink
+            key = { item.name }
+            to ={ item.to }
+            >
+                <div>
+                    {
+                    <i className={`navbar-mobile-item-icon ${pathname.includes(item.to) ? item.bxsClassname : item.bxClassname}` }></i>
+                    }
 
-</>
+                </div>
+            </NavLink>
+        ))
+            
+        }
+    </nav>
+    }
+
+    </>
   )
 }

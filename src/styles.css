@@ -53,16 +53,11 @@ h1{
 @media screen and (max-width: 500px){
     .main-container {
         flex-direction: column;
+        width: 100%;
     }
 
     .main-container > div{
         width: 100%;
-    }
-    .navbar-container{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-
     }
 
     .right-container{
