@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './SoonMessage.css'
 import Swal from 'sweetalert2'
 
