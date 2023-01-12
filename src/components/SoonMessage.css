@@ -1,0 +1,15 @@
+.soon-message{
+    padding: 10px 20px;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    background-color: rgba(255, 23, 131, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+
+}
