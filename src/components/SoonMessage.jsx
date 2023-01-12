@@ -1,19 +1,28 @@
 import { useState } from 'react';
 import './SoonMessage.css'
+import Swal from 'sweetalert2'
 
-export const SoonMessage = ( params ) => {
+export const SoonMessage = ( {shows} ) => {
 
-    console.log( params )
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top',
+    background: "rgb(255, 23, 131)",
+    color: "white",
+    iconColor: "white",
+    width: "auto",
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  
+  Toast.fire({
+    icon: undefined,
+    title: 'SOON!'
+  })
 
-    console.log('SoonMessage');
-
-    const [show, setShow] = useState(false)
-
-    setTimeout(() => {
-        setShow(true)
-    }, 2000);
-
-  return (
-    <div style={{display:  show? 'block' : 'none' }} className='soon-message'>Soon!</div>
-  )
 }

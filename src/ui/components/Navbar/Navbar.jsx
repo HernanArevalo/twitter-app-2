@@ -1,8 +1,9 @@
 
-import { useLayoutEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { navbarItems, navBarItemsMobile } from './navbarItems.json'
 import './Navbar.css'
+import { SoonMessage } from '../../../components/SoonMessage';
 
 
 
@@ -12,7 +13,6 @@ export const Navbar = () => {
     const { pathname } = useLocation();
 
     const navBar = useRef()
-
 
   return (
     <>{
@@ -34,6 +34,7 @@ export const Navbar = () => {
                     to={ item.to }
                     className={({isActive}) =>
                         isActive? 'active': 'inactive' }
+                    onClick={ item.name != "Inicio" ? SoonMessage : null}
                     >
                     <div className="inicioNav leftItem">
                         <div>

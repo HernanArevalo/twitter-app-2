@@ -1,4 +1,5 @@
 
+import { SoonMessage } from './SoonMessage';
 import './Tweet.css'
 
 export const Tweet = (tweet) => {
@@ -7,7 +8,7 @@ export const Tweet = (tweet) => {
     //console.log(day)
 
     return (
-            <div className="tweet">
+            <div className="tweet" onClick={ SoonMessage }>
                 <div className="centerTweetTop">
                     <div className="centerTweet1">
                         <img src={tweet.user.profile_image_url } alt="profile picture" />
@@ -48,20 +49,20 @@ export const Tweet = (tweet) => {
                         <div className="icon-tweet-container">
                             <img className="" src="./assets/retweet-arrows.svg" alt="" />
                         </div>
-                        <div className="tweetIconsSpan">
+                        <div className="tweetIconsSpan" >
                             { tweet.retweet_count != 0 && tweet.retweet_count }
                         </div>
 
                     </div>
-                    <div className="tweetFav tweetIcon">
+                    <div className="tweetFav tweetIcon" >
                         <div className="icon-tweet-container">
                             <img className="" src="./assets/heart.png" alt="" />
                         </div>
-                        <div className="tweetIconsSpan">
+                        <div className="tweetIconsSpan" >
                             { tweet.favorite_count != 0 && tweet.favorite_count }
                         </div>
                     </div>
-                    <div className="tweetShare tweetIcon">
+                    <div className="tweetShare tweetIcon" >
                         <div className="icon-tweet-container">
                             <img className="" src="./assets/upload.png" alt="" />
                         </div>

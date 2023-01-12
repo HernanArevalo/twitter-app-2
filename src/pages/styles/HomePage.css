@@ -198,3 +198,13 @@ a{
     display: flex;
     flex-direction: column;
 }
+
+.swal2-popup{
+    border-radius: 999px;
+}
+
+
+.swal2-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}

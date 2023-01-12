@@ -1,10 +1,13 @@
 import { Tweet } from '../components/Tweet';
 import { Link } from 'react-router-dom'
 import { tweets } from '../data/tweetsData.json'
+import { SoonMessage } from '../components/SoonMessage'
 import './styles/HomePage.css'
-import { SoonMessage } from '../components/SoonMessage';
+
 
 export const HomePage = () => {
+
+
 
 
   return (
@@ -26,7 +29,7 @@ export const HomePage = () => {
                 </div>
                 <div className="centerTwittear22">
                     <Link to="">
-                        <div>
+                        <div onClick={ SoonMessage }>
                             <i className='bx bx-world'></i>
                             <span>Cualquier persona puede responder</span>
 
@@ -36,27 +39,27 @@ export const HomePage = () => {
                 <div className="centerTwittear23">
                     <div className="centerTwittear23icons">
 
-                        <Link to="">
+                        <Link to="" onClick={ SoonMessage }>
                             <div className="centerTwittear23icon">
                                 <i className='bx bx-image-alt'></i>
                             </div>
                         </Link>
-                        <Link to="">
+                        <Link to="" onClick={ SoonMessage }>
                             <div className="centerTwittear23icon">
                                 <i className='bx bxs-file-gif'></i>
                             </div>
                         </Link>
-                        <Link to="">
+                        <Link to="" onClick={ SoonMessage }>
                             <div className="centerTwittear23icon">
                                 <i className='bx bx-bar-chart-alt-2 bx-rotate-90'></i>
                             </div>
                         </Link>
-                        <Link to="">
+                        <Link to="" onClick={ SoonMessage }>
                             <div className="centerTwittear23icon">
                                 <i className='bx bx-smile'></i>
                             </div>
                         </Link>
-                        <Link to="">
+                        <Link to="" onClick={ SoonMessage }>
                             <div className="centerTwittear23icon">
                                 <i className='bx bx-calendar-event'></i>
                             </div>
@@ -81,7 +84,6 @@ export const HomePage = () => {
             }
 
         </div>
-        <SoonMessage shows={'false'}/>
     </div>
 
 
