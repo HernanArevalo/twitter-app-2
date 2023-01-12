@@ -1,4 +1,4 @@
-import { Tweet } from '../components/tweet';
+import { Tweet } from '../components/Tweet';
 import { Link } from 'react-router-dom'
 import { tweets } from '../data/tweetsData.json'
 import './styles/HomePage.css'
